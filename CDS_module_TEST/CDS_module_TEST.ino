@@ -52,9 +52,9 @@ void loop()
      */ 
 
     /* 各桁の表示する数値を算出 */
-    display_01   = cds / 10   % 10; /* 1/10 の位(cm) */
-    display_1    = cds / 100  % 10; /* 1    の位(cm) */
-    display_10   = cds / 1000 % 10; /* 10   の位(cm) */
+    display_01   = cds    % 10; /* 1/10 の位(cm)  1030 103*/
+    display_1    = cds / 10  % 10; /* 1    の位(cm)  1030 0*/
+    display_10   = cds / 100 % 10; /* 10   の位(cm)  1030 */
 
     /* 測定値表示 */
     /* Display(x,y):x桁にyを表示 */
